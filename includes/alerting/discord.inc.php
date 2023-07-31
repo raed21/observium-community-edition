@@ -40,7 +40,6 @@ if (isset($endpoint['short']) && $endpoint['short'] === 'true')
   // Short format
   $data['embeds'][] = [
     'title'      => $message_tags['TITLE'],
-    'url'        => $message_tags['ALERT_URL'],
     'color'      => $color
   ];
 
@@ -48,7 +47,6 @@ if (isset($endpoint['short']) && $endpoint['short'] === 'true')
 
   $data['embeds'][] = [
     'title'      => $emoji.' '.$message_tags['TITLE'],
-    'url'        => $message_tags['ALERT_URL'],
     'color'      => $color,
     //'text'       => simple_template('slack_text.tpl', $message_tags, array('is_file' => TRUE)),
     'fields'     => [
